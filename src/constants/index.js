@@ -91,7 +91,7 @@ const experiences = [
     company_name: "Amber",
     icon: amber,
     iconBg: "#FF0000",
-    date: "May 2024 - Present",
+    date: "May 2024 - July 2024",
     points: [
       "Managed booking processes with partner properties on designated platforms, ensuring smooth transactions for customers.",
       "Resolved tickets within agreed timelines, maintaining customer satisfaction and operational efficiency.",

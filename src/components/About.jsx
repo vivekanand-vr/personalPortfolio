@@ -32,8 +32,3 @@ const About = () => {
 };
 
 export default SectionWrapper(About, "about");
-
-/*
-import Codechef from "../assets/codechef.jpg";
-<img className="" src={Codechef} alt="codechef profile"></img>
-*/
