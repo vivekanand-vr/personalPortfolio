@@ -34,7 +34,7 @@ function App() {
             </a>
           ))}
         </div>
-        <a href='https://drive.google.com/file/d/1YGahxUQ6iAaIhuDzIjJAHGfSqnkI2xq6/view?usp=drive_link'>
+        <a href='https://drive.google.com/file/d/1fZMbp_BIcp4OjkKEFqPMJfFcvpBiK0y9/view?usp=sharing'>
           <button className="inline-block text-l bg-[#edeeee] text-[black] cursor-pointer ml-3 mt-4 px-3 py-2 rounded-[5px] border-[none] hover:bg-[#0071c5] hover:text-[white]
                              sm:text-2xl sm:ml-5 sm:mt-4">Resume</button>
         </a>
