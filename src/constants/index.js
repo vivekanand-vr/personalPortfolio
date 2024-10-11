@@ -170,18 +170,6 @@ const projects = [
     image: crm,
     source_code_link: "https://github.com/vivekanand-vr/crmSystem-thymleaf.git",
   },
-  {
-    name: "Profile Harbor",
-    description: "Web application that provides a user-friendly interface for users to input their personal information, technical skills, preferences, and upload their resume.",
-    tags: [
-      {
-        name: "React JS, Spring Boot, MySQL",
-        color: "#E5E4E2",
-      },
-    ],
-    image: forms,
-    source_code_link: "https://github.com/vivekanand-vr/profileHarbor.git",
-  },
 
   {
     name: "Student Management Portal",
