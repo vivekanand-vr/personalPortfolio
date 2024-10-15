@@ -24,6 +24,17 @@ import snack from "./project_images/snack.png";
 import crm from "./project_images/crmApp.png"
 import monopoly from "./project_images/Monopoly.jpg";
 
+//Project Videos
+import calendlyV from './project_videos/Calendly_Video.mp4';
+import crmV from './project_videos/CRM_Video.mp4';
+import monopolyV from './project_videos/Monopoly_Video.mp4';
+import rentifyV from './project_videos/Rentify_Video.mp4';
+import smpV from './project_videos/SMP_Video.mp4';
+import snackdashV from './project_videos/Snackdash_Video.mp4';
+import trackflowV from './project_videos/Trackflow_Video.mp4';
+
+export { calendlyV, crmV, monopolyV, rentifyV, smpV, snackdashV, trackflowV };
+
 export { icon, menu, close, github, css, git, html, javascript, tailwind, springBoot,
          ineuron, amber, mvc, snack, crm, monopoly, rentify 
        };

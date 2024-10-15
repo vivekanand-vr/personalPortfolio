@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { motion } from "framer-motion";
 import { FaGithub, FaLink } from 'react-icons/fa';
 import { styles } from "../styles";
@@ -7,36 +7,60 @@ import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 
 const ProjectCard = ({
-  index,
   name,
   description,
-  tags,
   image,
+  video,
   source_code_link,
 }) => {
+  const [isHovered, setIsHovered] = useState(false);
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    if (isHovered && videoRef.current) {
+      videoRef.current.play();
+    } else if (videoRef.current) {
+      videoRef.current.pause();
+      videoRef.current.currentTime = 0;
+    }
+  }, [isHovered]);
+
   return (
-    <>
-      <div className='bg-gray-700 p-5 rounded-[10px] sm:w-[360px] w-full cursor-pointer hover:scale-105 duration-300 hover:bg-gray-800'>
-        <div className='relative w-full h-[230px]'>
+    <div 
+      className='bg-[#11284b] p-4 rounded-xl sm:w-[350px] cursor-pointer hover:scale-110 duration-300 hover:bg-gray-800'
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
+      <div className='relative h-52'>
+        {isHovered && video ? (
+          <video
+            ref={videoRef}
+            src={video}
+            className='w-full h-full object-cover rounded'
+            loop
+            muted
+            playsInline
+          />
+        ) : (
           <img
             src={image}
             alt='project_image'
-            className='w-full h-full object-cover rounded-[10px]'
+            className='w-full h-full object-cover rounded'
           />
-        </div>
-
-        <div className='mt-5'>
-          <h3 className='text-white font-bold text-[24px]'>{name}</h3>
-          <p className='mt-2 text-secondary text-[14px]'>{description}</p>
-        </div>
-        <div onClick={() => window.open(source_code_link, "_blank")}
-             className="items-center mt-3 hover:text-green-400">
-          <span className="flex flex-row items-center p-1.5 font-semibold tracking-wider w-fit rounded border border-green-400">
-            GitHub <FaGithub size={18} className="ml-2" />
-          </span>
-        </div>
+        )}
       </div>
-    </>
+
+      <div className='mt-5'>
+        <h3 className='text-white font-bold text-2xl'>{name}</h3>
+        <p className='mt-2 text-slate-300 text-sm'>{description}</p>
+      </div>
+      <div onClick={() => window.open(source_code_link, "_blank")}
+           className="items-center mt-4 hover:text-green-400">
+        <span className="flex flex-row items-center p-1 px-2 tracking-wider w-fit rounded border border-white">
+          GitHub <FaGithub size={18} className="ml-2" />
+        </span>
+      </div>
+    </div>
   );
 };
 

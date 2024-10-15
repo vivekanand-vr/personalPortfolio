@@ -1,5 +1,6 @@
 import { javascript, html, css, tailwind, git, springBoot, mvc, snack, crm,
          monopoly, rentify, ineuron, amber } from "../assets";
+import { calendlyV, crmV, monopolyV, rentifyV, smpV, snackdashV, trackflowV } from "../assets";
 
 export const navLinks = [
   {
@@ -76,9 +77,9 @@ const experiences = [
     iconBg: "#FF0000",
     date: "May 2024 - August 2024",
     points: [
-      "Managed booking processes with partner properties on designated platforms, ensuring smooth transactions for customers.",
-      "Resolved tickets within agreed timelines, maintaining customer satisfaction and operational efficiency.",
-      "Engaged with the sales team through Slack, enabling efficient resolution of customer inquiries and issues."
+      "Redesigned the website footer for both web and mobile, improving responsiveness and accessibility.",
+      "Integrated new, detailed property cards to boost user interaction and engagement by approximately 30%",
+      "Redesigned the property page, incorporating image carousels and additional sections to enhance visual appeal and navigation."
     ],
   }, 
   {
@@ -103,6 +104,7 @@ const projects = [
     description:
       "A platform that allows users to buy and sell their properties. It aims to bridge the gap between property owners and tenants.",
     image: rentify,
+    video: rentifyV,
     source_code_link: "https://github.com/vivekanand-vr/Rentify",
   },
   {
@@ -110,6 +112,7 @@ const projects = [
     description:
       "An API based 2-player monopoly game which can be played by sending post requests and in response it displayes transaction messages.",
     image: monopoly,
+    video: monopolyV,
     source_code_link: "https://github.com/vivekanand-vr/monopoly-2player",
 
   },
@@ -119,6 +122,7 @@ const projects = [
     description:
       "Food delivery application by the functionality of the popular Swiggy platform, allows users to search restaurants and add cuisines to cart and checkout.",
     image: snack,
+    video: snackdashV,
     source_code_link: "https://github.com/vivekanand-vr/snackdash.git",
   },
 
@@ -127,6 +131,7 @@ const projects = [
     description:
       "This web application is built using Spring MVC and it efficiently manages customer details, empowering users to seamlessly add, update, or delete records.",
     image: crm,
+    video: crmV,
     source_code_link: "https://github.com/vivekanand-vr/crmSystem-thymleaf.git",
   },
 
@@ -135,6 +140,7 @@ const projects = [
     description:
       "A student management portal to facilitate CRUD operations on student records. Implemented MVC design pattern.",
     image: mvc,
+    video: smpV,
     source_code_link: "https://github.com/vivekanand-vr/student_management_portal.git",
   },
  
