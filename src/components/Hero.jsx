@@ -1,56 +1,78 @@
-import { styles } from "../styles";
 import React, { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import pimage from "../assets/V.jpg";
-import Social_links from "./Social_links";
-
-const titles = [
-  { text: "Full Stack Developer", color: "bg-red-800" },
-  { text: "Frontend Developer", color: "bg-blue-800" },
-  { text: "Backend Developer", color: "bg-emerald-800" }
-];
+import { motion } from 'framer-motion';
+import { Metrics, SocialHandles } from './SocialHandles';
 
 const Hero = () => {
-  const [currentTitleIndex, setCurrentTitleIndex] = useState(0);
+  const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentTitleIndex((prevIndex) => (prevIndex + 1) % titles.length);
-    }, 3500);
-
-    return () => clearInterval(interval);
+    const timer = setTimeout(() => setIsLoaded(true), 500);
+    return () => clearTimeout(timer);
   }, []);
 
+  const fadeIn = {
+    hidden: { opacity: 0 },
+    visible: { opacity: 1, transition: { duration: 0.5 } }
+  };
+
   return (
-    <section className="flex flex-wrap relative w-full h-screen items-center justify-center">
-      <div className={`absolute inset-0 top-[150px] max-w-7xl mx-auto ${styles.paddingX} flex flex-col items-center gap-8`}>
-        <div className="flex flex-col items-center text-center">
-          <div className="flex justify-center items-center w-36 h-36 sm:w-48 sm:h-48 rounded-full border-4 border-white overflow-hidden">
-            <img src={pimage} alt="Profile" className="w-full h-auto" />
+    <motion.section 
+      initial="hidden"
+      animate={isLoaded ? "visible" : "hidden"}
+      variants={fadeIn}
+      className="min-h-screen text-white flex items-center justify-center px-4 sm:px-6 lg:px-8"
+    >
+      <div className="max-w-4xl w-full">
+        <div className="flex flex-col md:flex-row items-center justify-center mb-12">
+          <div className="w-48 h-60 md:w-56 md:h-72  mb-8 md:mb-0 md:mr-8">
+            <motion.img 
+              src="src/assets/V.jpg" 
+              alt="Vivekanand" 
+              className="border-4 border-white shadow-lg object-cover w-48 h-60 md:w-56 md:h-72"
+              initial={{ scale: 0.8 }}
+              animate={{ scale: 1 }}
+              transition={{ duration: 0.5 }}
+            />
           </div>
-          <br className="sm:block hidden" />
-          <h1 style={{ textShadow: "blue 4px 3px 5px" }} className={`${styles.heroHeadText} text-gray-200 mt-4 sm:mt-0`}>
-            Hi, I'm Vivekanand
-          </h1>
-          <h1 className="text-gray-200 text-xl sm:text-4xl font-semibold mt-2">
-            I am a  
-            <AnimatePresence mode="wait">
-              <motion.span
-                key={currentTitleIndex}
-                initial={{ y: 20, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                exit={{ y: -20, opacity: 0 }}
-                transition={{ duration: 0.5 }}
-                className={`${titles[currentTitleIndex].color} p-1 m-1 ml-2 w-60 md:w-[400px] rounded-md inline-block`}
-              >
-                {titles[currentTitleIndex].text}
-              </motion.span>
-            </AnimatePresence>
-          </h1>
-          <Social_links />
+          <div className="w-96 md:w-2/3 text-center md:text-left">
+            <motion.h2 
+              className="text-xl mb-2"
+              initial={{ y: -20 }}
+              animate={{ y: 0 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+            >
+              Hey there, I am
+            </motion.h2>
+            <motion.h1 
+              className="text-4xl sm:text-5xl font-semibold mb-4"
+              initial={{ y: -20 }}
+              animate={{ y: 0 }}
+              transition={{ duration: 0.5, delay: 0.3 }}
+            >
+              Vivekanand
+            </motion.h1>
+            <motion.h1 
+              className="text-2xl sm:text-3xl font-semibold mb-4"
+              initial={{ y: -20 }}
+              animate={{ y: 0 }}
+              transition={{ duration: 0.5, delay: 0.3 }}
+            >
+              I am a <span className='text-green-400'>Full Stack Developer</span>
+            </motion.h1>
+            <motion.p 
+              className="text-gray-300 mb-4"
+              initial={{ y: -20 }}
+              animate={{ y: 0 }}
+              transition={{ duration: 0.5, delay: 0.4 }}
+            >
+              With 2+ years of experience, I craft engaging and responsive web applications that bring ideas to life. Let's build something amazing together!
+            </motion.p>
+            <SocialHandles />
+          </div>
         </div>
+        <Metrics />
       </div>
-    </section>
+    </motion.section>
   );
 };
 

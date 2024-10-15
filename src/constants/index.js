@@ -1,22 +1,5 @@
-import {
-  javascript,
-  html,
-  css,
-  tailwind,
-  git,
-
-  sb,
-  mvc, 
-  forms,
-  wfa,
-  snack,
-  crm,
-  monopoly,
-  rentify,
-
-  ineuron,
-  amber,
-} from "../assets";
+import { javascript, html, css, tailwind, git, springBoot, mvc, snack, crm,
+         monopoly, rentify, ineuron, amber } from "../assets";
 
 export const navLinks = [
   {
@@ -68,7 +51,7 @@ const technologies = [
   },
   {
     name: "spring",
-    icon: sb,
+    icon: springBoot,
   },
   {
     name: "Docker",
@@ -119,12 +102,6 @@ const projects = [
     name: "Rentify",
     description:
       "A platform that allows users to buy and sell their properties. It aims to bridge the gap between property owners and tenants.",
-    tags: [
-      {
-        name: "React JS, Redux, Spring Boot, MySQL",
-        color: "#E5E4E2",
-      },
-    ],
     image: rentify,
     source_code_link: "https://github.com/vivekanand-vr/Rentify",
   },
@@ -132,12 +109,6 @@ const projects = [
     name: "Monopoly",
     description:
       "An API based 2-player monopoly game which can be played by sending post requests and in response it displayes transaction messages.",
-    tags: [
-      {
-        name: "React JS, Spring Boot, MySQL",
-        color: "#E5E4E2",
-      },
-    ],
     image: monopoly,
     source_code_link: "https://github.com/vivekanand-vr/monopoly-2player",
 
@@ -147,12 +118,6 @@ const projects = [
     name: "Snack Dash",
     description:
       "Food delivery application by the functionality of the popular Swiggy platform, allows users to search restaurants and add cuisines to cart and checkout.",
-    tags: [
-      {
-        name: "React JS, Redux Toolkit, Tailwind CSS",
-        color: "#E5E4E2",
-      },
-    ],
     image: snack,
     source_code_link: "https://github.com/vivekanand-vr/snackdash.git",
   },
@@ -161,12 +126,6 @@ const projects = [
     name: "Customer Relationship Manager",
     description:
       "This web application is built using Spring MVC and it efficiently manages customer details, empowering users to seamlessly add, update, or delete records.",
-    tags: [
-      {
-        name: "Spring Boot, Thymleaf, MySQL",
-        color: "#E5E4E2",
-      },
-    ],
     image: crm,
     source_code_link: "https://github.com/vivekanand-vr/crmSystem-thymleaf.git",
   },
@@ -175,12 +134,6 @@ const projects = [
     name: "Student Management Portal",
     description:
       "A student management portal to facilitate CRUD operations on student records. Implemented MVC design pattern.",
-    tags: [
-      {
-        name: "Java, JEE, Hibernate, MySQL",
-        color: "#E5E4E2",
-      },
-    ],
     image: mvc,
     source_code_link: "https://github.com/vivekanand-vr/student_management_portal.git",
   },
@@ -188,21 +141,3 @@ const projects = [
 ];
 
 export { technologies, experiences, projects };
-
-/* Additional Projects
- {
-    name: "Weather Forecast Application",
-    description:
-      "An application to display weather details according to city. Integrated OpenWeather APIs for real-time weather data retrieval",
-    tags: [
-      {
-        name: "React JS, Tailwind CSS",
-        color: "#E5E4E2",
-      },
-    ],
-    image: wfa,
-    source_code_link: "https://github.com/vivekanand-vr/weather-forecast-app.git",
-  },
-  
-  
-  */
