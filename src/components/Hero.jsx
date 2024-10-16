@@ -23,12 +23,12 @@ const Hero = () => {
       className="min-h-screen text-white flex items-center justify-center px-4 sm:px-6 lg:px-8"
     >
       <div className="max-w-4xl w-full">
-        <div className="flex flex-col md:flex-row items-center justify-center mb-12">
-          <div className="w-48 h-60 md:w-56 md:h-72  mb-8 md:mb-0 md:mr-8">
+        <div className="flex flex-col md:flex-row items-center justify-center mb-6 md:mb-12">
+          <div className="w-40 h-48 md:w-56 md:h-72  mb-3 md:mb-0 md:mr-8">
             <motion.img 
-              src="src/assets/V.jpg" 
+              src="V.jpg" 
               alt="Vivekanand" 
-              className="border-4 border-white shadow-lg object-cover w-48 h-60 md:w-56 md:h-72"
+              className="border-4 border-white shadow-lg object-cover w-40 h-48 md:w-56 md:h-72"
               initial={{ scale: 0.8 }}
               animate={{ scale: 1 }}
               transition={{ duration: 0.5 }}
@@ -36,7 +36,7 @@ const Hero = () => {
           </div>
           <div className="w-96 md:w-2/3 text-center md:text-left">
             <motion.h2 
-              className="text-xl mb-2"
+              className="text-xl md:mb-2"
               initial={{ y: -20 }}
               animate={{ y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
@@ -44,7 +44,7 @@ const Hero = () => {
               Hey there, I am
             </motion.h2>
             <motion.h1 
-              className="text-4xl sm:text-5xl font-semibold mb-4"
+              className="text-4xl sm:text-5xl font-semibold mb-2 md:mb-4"
               initial={{ y: -20 }}
               animate={{ y: 0 }}
               transition={{ duration: 0.5, delay: 0.3 }}
@@ -52,7 +52,7 @@ const Hero = () => {
               Vivekanand
             </motion.h1>
             <motion.h1 
-              className="text-2xl sm:text-3xl font-semibold mb-4"
+              className="text-2xl sm:text-3xl font-semibold mb-2 md:mb-4"
               initial={{ y: -20 }}
               animate={{ y: 0 }}
               transition={{ duration: 0.5, delay: 0.3 }}
@@ -60,7 +60,7 @@ const Hero = () => {
               I am a <span className='text-green-400'>Full Stack Developer</span>
             </motion.h1>
             <motion.p 
-              className="text-gray-300 mb-4"
+              className="text-sm md:text-base text-gray-300 mb-6"
               initial={{ y: -20 }}
               animate={{ y: 0 }}
               transition={{ duration: 0.5, delay: 0.4 }}

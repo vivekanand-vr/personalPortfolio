@@ -1,12 +1,11 @@
-import icon from "./VR.jpg";
-
 // SVGs
 import menu from "./svgs/menu.svg";
 import close from "./svgs/close.svg";
 
 // Company Icons
-import ineuron from "./company_icons/ineuron.png";
+import e1 from './company_icons/e1.jpg'
 import amber from "./company_icons/amber.jpg";
+import ineuron from "./company_icons/ineuron.png";
 
 // Skills Icons
 import github from "./tech_icons/github.png";
@@ -18,6 +17,8 @@ import tailwind from "./tech_icons/tailwind.png";
 import springBoot from "./tech_icons/springBoot.png";
 
 // Project Images
+import calendly from './project_images/calendly.jpg';
+import trackflow from './project_images/trackflow.jpg';
 import rentify from "./project_images/rentify.jpg";
 import mvc from "./project_images/smp.png";
 import snack from "./project_images/snack.png";
@@ -35,6 +36,6 @@ import trackflowV from './project_videos/Trackflow_Video.mp4';
 
 export { calendlyV, crmV, monopolyV, rentifyV, smpV, snackdashV, trackflowV };
 
-export { icon, menu, close, github, css, git, html, javascript, tailwind, springBoot,
-         ineuron, amber, mvc, snack, crm, monopoly, rentify 
+export { menu, close, github, css, git, html, javascript, tailwind, springBoot,
+         e1, ineuron, amber, mvc, snack, crm, monopoly, rentify, calendly, trackflow 
        };
