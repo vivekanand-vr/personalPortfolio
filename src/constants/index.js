@@ -112,33 +112,40 @@ const experiences = [
 ];
 
 
-const projects = [
-  
+const projects = [ 
   {
     name: "Rentify",
-    description:
-      "A platform that allows users to buy and sell their properties. It aims to bridge the gap between property owners and tenants.",
+    points:[
+      "Simplifies the rental process by seamlessly connecting property owners with tenants based on their needs.",
+      "Addresses the growing demand for real estate in high-population cities, making renting more efficient post-pandemic."
+    ],
     video: rentifyV,
     source_code_link: "https://github.com/vivekanand-vr/Rentify",
   },
   {
     name: "TrackFlow",
-    description:
-      "TrackFlow is a simple and efficient job application tracking system that allows users to add, track, and manage their job applications with ease.",
+    points:[
+      "Streamlines job application management with a clean interface, making it easy to track and organize applications.",
+      "Offers personalized dashboards and secure user authentication for a customized experience."
+    ],
     video: trackflowV,
     source_code_link: "https://github.com/vivekanand-vr/trackFlow",
   },
   {
     name: "Calendly",
-    description:
-      "Calendly is an event scheduling application which provides users with a calendar view to manage their events.",
+    points:[
+      "Enables efficient event scheduling with a dynamic calendar view, allowing users to easily manage and organize events.",
+      "Provides seamless drag-and-drop functionality for events, supported by secure authentication and robust data management.",
+    ],
     video: calendlyV,
     source_code_link: "https://github.com/vivekanand-vr/calendly",
   },
   {
     name: "Monopoly",
-    description:
-      "An API based 2-player monopoly game which can be played by sending post requests and in response it displayes transaction messages.",
+    points:[
+      "A two-player API based Monopoly game that can be played by sending API requests and transaction status will be recieved as response",
+      "Includes a UI for playing ensuring an authentic game experience with interactive transaction messages",
+    ],
     video: monopolyV,
     source_code_link: "https://github.com/vivekanand-vr/monopoly-2player",
 
@@ -146,24 +153,30 @@ const projects = [
 
   {
     name: "Snack Dash",
-    description:
-      "Food delivery application by the functionality of the popular Swiggy platform, allows users to search restaurants and add cuisines to cart and checkout.",
+    points:[
+      "Delivers a seamless user experience with restaurant browsing, login, and cart functionality, inspired by Swiggy's popular interface.",
+      "Efficiently manages restaurant data and user interactions, with more features in development to enhance convenience and variety.",
+    ],
     video: snackdashV,
     source_code_link: "https://github.com/vivekanand-vr/snackdash.git",
   },
 
   {
     name: "Customer Relationship Manager",
-    description:
-      "This web application that efficiently manages customer details, empowering users to seamlessly manage records.",
+    points:[
+      "Facilitates smooth customer data management with seamless CRUD operations, enhancing operational efficiency.",
+      "Combines dynamic web rendering with a modern, responsive interface for an intuitive and engaging user experience.",
+    ],
     video: crmV,
     source_code_link: "https://github.com/vivekanand-vr/crmSystem-thymleaf.git",
   },
 
   {
     name: "Student Management Portal",
-    description:
-      "A student management portal to facilitate CRUD operations on student records. Implemented MVC design pattern.",
+    points:[
+      "Simplifies student record management with efficient CRUD operations, ensuring streamlined data handling and retrieval.",
+      "Leverages the MVC architecture for clear separation of concerns and Hibernate for smooth database interaction.",
+    ],
     video: smpV,
     source_code_link: "https://github.com/vivekanand-vr/student_management_portal.git",
   },

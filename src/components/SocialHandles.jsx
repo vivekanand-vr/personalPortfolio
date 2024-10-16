@@ -32,7 +32,7 @@ function Metrics(){
       {metrics.map((metric, index) => (
           <div key={index}>
             <h3 className="text-xl md:text-3xl font-semibold text-sky-400">{metric.title}</h3>
-            <p className="text-sm text-neutral-400">{metric.text}</p>
+            <p className="text-xs md:text-sm text-neutral-400">{metric.text}</p>
           </div>
       ))}
     </motion.div>
@@ -42,7 +42,7 @@ function Metrics(){
 function SocialHandles() {
   return (
     <motion.div
-        className="flex justify-center md:justify-start space-x-6"
+        className="flex justify-center md:justify-start space-x-4 md:space-x-6"
         initial={{ y: -20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5, delay: 1 }}

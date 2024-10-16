@@ -8,7 +8,7 @@ import { fadeIn, textVariant } from "../utils/motion";
 
 const ProjectCard = ({
   name,
-  description,
+  points,
   video,
   source_code_link,
 }) => {
@@ -26,7 +26,7 @@ const ProjectCard = ({
 
   return (
     <div 
-      className='bg-[#11284b] p-4 rounded-xl sm:w-[350px] cursor-pointer hover:scale-110 duration-300 hover:bg-gray-800'
+      className='bg-[#11284b] p-3 md:p-4 rounded-xl sm:w-[350px] cursor-pointer hover:scale-110 duration-300 hover:bg-gray-800'
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
@@ -46,19 +46,26 @@ const ProjectCard = ({
             }
           }}
         />
+        <div className='absolute inset-0 flex justify-end m-2'>
+          <div onClick={() => window.open(source_code_link, "_blank")}
+               className='black-gradient w-8 h-8 rounded-full flex justify-center items-center cursor-pointer'>
+              <FaGithub size={20} /> 
+            </div>
+          </div>
       </div>
 
       <div className='mt-5'>
-        <h3 className='text-white font-bold text-2xl'>{name}</h3>
-        <p className='mt-2 text-slate-300 text-sm'>{description}</p>
-      </div>
-      <div 
-        onClick={() => window.open(source_code_link, "_blank")}
-        className="items-center mt-4 hover:text-sky-400"
-      >
-        <span className="flex flex-row items-center p-1 px-2 tracking-wider w-fit rounded border border-neutral-400">
-          GitHub <FaGithub size={18} className="ml-2" />
-        </span>
+        <h3 className='text-white font-bold text-lg md:text-xl'>{name}</h3>
+        <ul className="ml-2 mt-2 space-y-2">
+          {points.map((point, index) =>(
+              <li key={index}
+                  className="text-gray-300 text-xs md:text-sm">
+                ▶️  {point}
+              </li>
+          ))}
+        </ul>
+        <p className='mt-2 text-slate-300 text-xs md:text-sm'></p>
+        
       </div>
     </div>
   );
@@ -80,13 +87,11 @@ const Works = () => {
         >
           Following projects showcase my skills and experience through
           real-world examples of my work. Each project is briefly described with
-          links to code repositories and live demos. It reflects my
-          ability to solve complex problems, work with different technologies,
-          and manage projects effectively.
+          links to code repositories and live demos.
         </motion.p>
       </div>
 
-      <div className='mt-20 flex flex-wrap gap-7'>
+      <div className='mt-10 flex flex-wrap gap-7'>
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
