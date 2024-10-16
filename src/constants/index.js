@@ -1,5 +1,4 @@
-import { javascript, html, css, tailwind, git, springBoot, mvc, snack, crm,
-         monopoly, rentify, calendly, trackflow, ineuron, amber, e1 } from "../assets";
+import { javascript, html, css, tailwind, git, springBoot, ineuron, amber, e1 } from "../assets";
 import { calendlyV, crmV, monopolyV, rentifyV, smpV, snackdashV, trackflowV } from "../assets";
 
 export const navLinks = [
@@ -119,7 +118,6 @@ const projects = [
     name: "Rentify",
     description:
       "A platform that allows users to buy and sell their properties. It aims to bridge the gap between property owners and tenants.",
-    image: rentify,
     video: rentifyV,
     source_code_link: "https://github.com/vivekanand-vr/Rentify",
   },
@@ -127,7 +125,6 @@ const projects = [
     name: "TrackFlow",
     description:
       "TrackFlow is a simple and efficient job application tracking system that allows users to add, track, and manage their job applications with ease.",
-    image: trackflow,
     video: trackflowV,
     source_code_link: "https://github.com/vivekanand-vr/trackFlow",
   },
@@ -135,7 +132,6 @@ const projects = [
     name: "Calendly",
     description:
       "Calendly is an event scheduling application which provides users with a calendar view to manage their events.",
-    image: calendly,
     video: calendlyV,
     source_code_link: "https://github.com/vivekanand-vr/calendly",
   },
@@ -143,7 +139,6 @@ const projects = [
     name: "Monopoly",
     description:
       "An API based 2-player monopoly game which can be played by sending post requests and in response it displayes transaction messages.",
-    image: monopoly,
     video: monopolyV,
     source_code_link: "https://github.com/vivekanand-vr/monopoly-2player",
 
@@ -153,7 +148,6 @@ const projects = [
     name: "Snack Dash",
     description:
       "Food delivery application by the functionality of the popular Swiggy platform, allows users to search restaurants and add cuisines to cart and checkout.",
-    image: snack,
     video: snackdashV,
     source_code_link: "https://github.com/vivekanand-vr/snackdash.git",
   },
@@ -162,7 +156,6 @@ const projects = [
     name: "Customer Relationship Manager",
     description:
       "This web application that efficiently manages customer details, empowering users to seamlessly manage records.",
-    image: crm,
     video: crmV,
     source_code_link: "https://github.com/vivekanand-vr/crmSystem-thymleaf.git",
   },
@@ -171,7 +164,6 @@ const projects = [
     name: "Student Management Portal",
     description:
       "A student management portal to facilitate CRUD operations on student records. Implemented MVC design pattern.",
-    image: mvc,
     video: smpV,
     source_code_link: "https://github.com/vivekanand-vr/student_management_portal.git",
   },

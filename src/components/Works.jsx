@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import { motion } from "framer-motion";
-import { FaGithub, FaLink } from 'react-icons/fa';
+import { FaGithub } from 'react-icons/fa';
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
@@ -9,7 +9,6 @@ import { fadeIn, textVariant } from "../utils/motion";
 const ProjectCard = ({
   name,
   description,
-  image,
   video,
   source_code_link,
 }) => {
@@ -32,37 +31,39 @@ const ProjectCard = ({
       onMouseLeave={() => setIsHovered(false)}
     >
       <div className='relative h-52'>
-        {isHovered && video ? (
-          <video
-            ref={videoRef}
-            src={video}
-            className='w-full h-full object-cover rounded'
-            loop
-            muted
-            playsInline
-          />
-        ) : (
-          <img
-            src={image}
-            alt='project_image'
-            className='w-full h-full object-cover rounded'
-          />
-        )}
+        {/* Video will pause on hover end and reset */}
+        <video
+          ref={videoRef}
+          src={video}
+          className='w-full h-full object-cover rounded'
+          muted
+          playsInline
+          loop
+          preload="metadata"
+          onLoadedData={() => {
+            if (videoRef.current) {
+              videoRef.current.pause();
+            }
+          }}
+        />
       </div>
 
       <div className='mt-5'>
         <h3 className='text-white font-bold text-2xl'>{name}</h3>
         <p className='mt-2 text-slate-300 text-sm'>{description}</p>
       </div>
-      <div onClick={() => window.open(source_code_link, "_blank")}
-           className="items-center mt-4 hover:text-green-400">
-        <span className="flex flex-row items-center p-1 px-2 tracking-wider w-fit rounded border border-white">
+      <div 
+        onClick={() => window.open(source_code_link, "_blank")}
+        className="items-center mt-4 hover:text-sky-400"
+      >
+        <span className="flex flex-row items-center p-1 px-2 tracking-wider w-fit rounded border border-neutral-400">
           GitHub <FaGithub size={18} className="ml-2" />
         </span>
       </div>
     </div>
   );
 };
+
 
 const Works = () => {
   return (
@@ -75,11 +76,11 @@ const Works = () => {
       <div className='w-full flex'>
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
-          className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
+          className='mt-3 text-slate-200 text-[17px] max-w-3xl leading-[30px]'
         >
-          Following projects showcases my skills and experience through
+          Following projects showcase my skills and experience through
           real-world examples of my work. Each project is briefly described with
-          links to code repositories and live demos in it. It reflects my
+          links to code repositories and live demos. It reflects my
           ability to solve complex problems, work with different technologies,
           and manage projects effectively.
         </motion.p>

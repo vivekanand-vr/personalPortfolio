@@ -14,7 +14,7 @@ const About = () => {
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
+        className='mt-4 text-slate-200 text-[17px] max-w-3xl leading-[30px]'
       >
         Hello there! 👋 I'm a passionate full stack developer with a focus on Java-based technologies. 
         My journey into the world of software development began with coursework in Java full stack development.

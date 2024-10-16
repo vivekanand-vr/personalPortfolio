@@ -57,7 +57,7 @@ const Hero = () => {
               animate={{ y: 0 }}
               transition={{ duration: 0.5, delay: 0.3 }}
             >
-              I am a <span className='text-green-400'>Full Stack Developer</span>
+              I am a <span className='text-sky-400'>Full Stack Developer</span>
             </motion.h1>
             <motion.p 
               className="text-sm md:text-base text-gray-300 mb-6"

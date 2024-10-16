@@ -31,7 +31,7 @@ function Metrics(){
           transition={{ duration: 0.5, delay: 0.7 }}>
       {metrics.map((metric, index) => (
           <div key={index}>
-            <h3 className="text-xl md:text-3xl font-semibold text-green-400">{metric.title}</h3>
+            <h3 className="text-xl md:text-3xl font-semibold text-sky-400">{metric.title}</h3>
             <p className="text-sm text-neutral-400">{metric.text}</p>
           </div>
       ))}
@@ -47,9 +47,9 @@ function SocialHandles() {
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5, delay: 1 }}
       >
-        <a href="https://github.com/vivekanand-vr" target="_blank" className="text-xl md:text-3xl hover:text-green-400 transition-colors"><FaGithub /></a>
-        <a href="https://leetcode.com/vicky_007/" target="_blank" className="text-xl md:text-3xl hover:text-green-400 transition-colors"><SiLeetcode/></a>
-        <a href="https://www.linkedin.com/in/vivekanand-vernekar" target="_blank"  className="text-xl md:text-3xl hover:text-green-400 transition-colors"><FaLinkedin /></a>
+        <a href="https://github.com/vivekanand-vr" target="_blank" className="text-xl md:text-3xl hover:text-sky-400 transition-colors"><FaGithub /></a>
+        <a href="https://leetcode.com/vicky_007/" target="_blank" className="text-xl md:text-3xl hover:text-sky-400 transition-colors"><SiLeetcode/></a>
+        <a href="https://www.linkedin.com/in/vivekanand-vernekar" target="_blank"  className="text-xl md:text-3xl hover:text-sky-400 transition-colors"><FaLinkedin /></a>
         <a href='https://drive.google.com/file/d/1fZMbp_BIcp4OjkKEFqPMJfFcvpBiK0y9/view?usp=sharing' target="_blank" 
            className='text-sm md:text-xl border border-white p-1.5 md:p-2 -mt-2 hover:bg-white hover:text-black transition duration-250 ease-in'>Resume</a>
         </motion.div>
