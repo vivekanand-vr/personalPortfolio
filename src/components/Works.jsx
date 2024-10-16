@@ -1,10 +1,8 @@
 import React, { useState, useRef, useEffect } from "react";
-import { motion } from "framer-motion";
 import { FaGithub } from 'react-icons/fa';
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
-import { fadeIn, textVariant } from "../utils/motion";
 
 const ProjectCard = ({
   name,
@@ -26,7 +24,7 @@ const ProjectCard = ({
 
   return (
     <div 
-      className='bg-[#11284b] p-3 md:p-4 rounded-xl sm:w-[350px] cursor-pointer hover:scale-110 duration-300 hover:bg-gray-800'
+      className='bg-[#11284b] p-3 md:p-4 rounded-lg sm:w-[350px] cursor-pointer md:hover:scale-110 duration-300 hover:bg-gray-800'
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
@@ -48,24 +46,21 @@ const ProjectCard = ({
         />
         <div className='absolute inset-0 flex justify-end m-2'>
           <div onClick={() => window.open(source_code_link, "_blank")}
-               className='black-gradient w-8 h-8 rounded-full flex justify-center items-center cursor-pointer'>
+               className='black-gradient w-8 h-8 rounded-full flex justify-center items-center cursor-pointer hover:text-green-400'>
               <FaGithub size={20} /> 
             </div>
           </div>
       </div>
 
-      <div className='mt-5'>
-        <h3 className='text-white font-bold text-lg md:text-xl'>{name}</h3>
-        <ul className="ml-2 mt-2 space-y-2">
+      <div className='mt-5 mb-4'>
+        <h3 className='ml-2 text-white font-bold text-lg md:text-xl'>{name}</h3>
+        <ul className="list-disc ml-6 mt-2 space-y-2">
           {points.map((point, index) =>(
-              <li key={index}
-                  className="text-gray-300 text-xs md:text-sm">
-                ▶️  {point}
+              <li key={index} className="text-gray-200 text-sm leading-5">
+                 {point}
               </li>
           ))}
-        </ul>
-        <p className='mt-2 text-slate-300 text-xs md:text-sm'></p>
-        
+        </ul>   
       </div>
     </div>
   );
@@ -75,20 +70,17 @@ const ProjectCard = ({
 const Works = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
+      <div>
         <p className={`${styles.sectionSubText} `}>My work</p>
         <h2 className={`${styles.sectionHeadText}`}>Projects.</h2>
-      </motion.div>
+      </div>
 
       <div className='w-full flex'>
-        <motion.p
-          variants={fadeIn("", "", 0.1, 1)}
-          className='mt-3 text-slate-200 text-[17px] max-w-3xl leading-[30px]'
-        >
+        <p className='mt-3 text-slate-200 text-[17px] max-w-3xl leading-[30px]'>
           Following projects showcase my skills and experience through
           real-world examples of my work. Each project is briefly described with
           links to code repositories and live demos.
-        </motion.p>
+        </p>
       </div>
 
       <div className='mt-10 flex flex-wrap gap-7'>

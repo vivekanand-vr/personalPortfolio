@@ -17,15 +17,15 @@ const metrics = [
     text: 'LeetCode Problems Solved'
   },
   {
-    title: '4.5',
-    text: 'Stars Average on Project Reviews and Mentorship Feedback'
+    title: '3★',
+    text: 'Ratings on CodeChef'
   }
 ]
 
 function Metrics(){
   return(
     <motion.div 
-          className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-6 text-center"
+          className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 text-center"
           initial={{ y: 20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.7 }}>

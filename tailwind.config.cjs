@@ -4,6 +4,9 @@ module.exports = {
   mode: "jit",
   theme: {
     extend: {
+      fontFamily: {
+        mukta: ['Mukta', 'sans-serif'],  // Add 'Mukta' font
+      },
       colors: {
         primary: "#03002e",
         secondary: "#d6cadd",
