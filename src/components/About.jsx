@@ -14,7 +14,7 @@ const About = () => {
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
+        className='mt-4 text-slate-200 text-[17px] max-w-3xl leading-[30px]'
       >
         Hello there! 👋 I'm a passionate full stack developer with a focus on Java-based technologies. 
         My journey into the world of software development began with coursework in Java full stack development.
@@ -23,7 +23,7 @@ const About = () => {
       </motion.p>
 
       <div className="mt-10 mb-5 text-bold text-3xl font-bold">My Leetcode & GitHub Stats.</div>
-      <div className="flex flex-wrap gap-5 bg-gray-700 rounded-md p-5 max-w-fit">
+      <div className="flex flex-wrap gap-5 rounded-md max-w-fit">
         <img className="border border-gray-300 rounded-md overflow-hidden inline-block" src="https://leetcard.jacoblin.cool/vicky_007?theme=dark&font=Rubik&ext=contest" alt="leetcode profile"></img>
         <img src="https://github-readme-stats.vercel.app/api?username=vivekanand-vr&theme=algolia&show_icons=true&hide_border=false&count_private=true" alt="github stats"></img>
       </div>

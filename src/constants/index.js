@@ -1,22 +1,5 @@
-import {
-  javascript,
-  html,
-  css,
-  tailwind,
-  git,
-
-  sb,
-  mvc, 
-  forms,
-  wfa,
-  snack,
-  crm,
-  monopoly,
-  rentify,
-
-  ineuron,
-  amber,
-} from "../assets";
+import { javascript, html, css, tailwind, git, springBoot, ineuron, amber, e1 } from "../assets";
+import { calendlyV, crmV, monopolyV, rentifyV, smpV, snackdashV, trackflowV } from "../assets";
 
 export const navLinks = [
   {
@@ -68,7 +51,7 @@ const technologies = [
   },
   {
     name: "spring",
-    icon: sb,
+    icon: springBoot,
   },
   {
     name: "Docker",
@@ -85,17 +68,33 @@ const technologies = [
 ];
 
 const experiences = [
+
+  {
+    title: "Software Developer",
+    company_name: "E1 Consulting",
+    icon: e1,
+    iconBg: "#000000",
+    date: "October 2024 - Present",
+    points: [
+      "Developing custom applications within the Workday ecosystem using Workday App Builder, ensuring seamless integration with Workday processes.",
+      "Utilizing Graph API, SOAP, and REST APIs to connect and manage data across various systems, enabling efficient application functionality.",
+      "Working with Workday model objects and orchestrations to design scalable and optimized workflows that align with business requirements.",
+      "Collaborating with cross-functional teams to integrate and test applications, while adhering to Workday's best practices for security and performance.",
+    ],
+  }, 
   
   {
-    title: "Operations Support Intern",
+    title: "SDE Intern - Frontend",
     company_name: "Amber",
     icon: amber,
     iconBg: "#FF0000",
-    date: "May 2024 - August 2024",
+    date: "February 2024 - July 2024",
     points: [
-      "Managed booking processes with partner properties on designated platforms, ensuring smooth transactions for customers.",
-      "Resolved tickets within agreed timelines, maintaining customer satisfaction and operational efficiency.",
-      "Engaged with the sales team through Slack, enabling efficient resolution of customer inquiries and issues."
+      "Redesigned the website footer for both web and mobile, improving responsiveness and accessibility.",
+      "Integrated new, detailed property cards to boost user interaction and engagement by approximately 30%",
+      "Redesigned the property page, incorporating image carousels and additional sections to enhance visual appeal and navigation.",
+      "Built a reusable, custom UI component library from scratch to streamline future development and maintain design consistency.",
+      "Fixed key bugs and collaborated with backend and product teams to enhance overall UI and UX, improving performance by 40%."
     ],
   }, 
   {
@@ -105,40 +104,42 @@ const experiences = [
     iconBg: "#1434A4",
     date: "January 2023 - January 2024",
     points: [
-      "Employed React for the development of dynamic and interactive user interfaces in single-page applications.",
-      "Contributed to the backend devlopment of web applications using Spring framework, JDBC, Servlets and integrated MySQL database to store and retrieve data.",
-      "Collaborated with team members using version control systems like Git and GitHub.",
-      "Engaged in continuous learning and exploration of emerging technologies and best practices.",
+      "Led the back-end development of web applications using Spring Framework, JDBC, and Servlets, enhancing data processing efficiency by 30% through optimized integration with MySQL database.",
+      "Developed dynamic and interactive user interfaces using React JS, boosting user engagement by 20 and reducing page load time by 15% for single-page applications.",
+      "Collaborated with a team of 5 developers utilizing Git and GitHub for version control, improving code deployment speed by 25% and ensuring 100% successful feature rollouts.",
     ],
   },
 ];
 
 
 const projects = [
+  
   {
     name: "Rentify",
     description:
       "A platform that allows users to buy and sell their properties. It aims to bridge the gap between property owners and tenants.",
-    tags: [
-      {
-        name: "React JS, Redux, Spring Boot, MySQL",
-        color: "#E5E4E2",
-      },
-    ],
-    image: rentify,
+    video: rentifyV,
     source_code_link: "https://github.com/vivekanand-vr/Rentify",
+  },
+  {
+    name: "TrackFlow",
+    description:
+      "TrackFlow is a simple and efficient job application tracking system that allows users to add, track, and manage their job applications with ease.",
+    video: trackflowV,
+    source_code_link: "https://github.com/vivekanand-vr/trackFlow",
+  },
+  {
+    name: "Calendly",
+    description:
+      "Calendly is an event scheduling application which provides users with a calendar view to manage their events.",
+    video: calendlyV,
+    source_code_link: "https://github.com/vivekanand-vr/calendly",
   },
   {
     name: "Monopoly",
     description:
       "An API based 2-player monopoly game which can be played by sending post requests and in response it displayes transaction messages.",
-    tags: [
-      {
-        name: "React JS, Spring Boot, MySQL",
-        color: "#E5E4E2",
-      },
-    ],
-    image: monopoly,
+    video: monopolyV,
     source_code_link: "https://github.com/vivekanand-vr/monopoly-2player",
 
   },
@@ -147,27 +148,15 @@ const projects = [
     name: "Snack Dash",
     description:
       "Food delivery application by the functionality of the popular Swiggy platform, allows users to search restaurants and add cuisines to cart and checkout.",
-    tags: [
-      {
-        name: "React JS, Redux Toolkit, Tailwind CSS",
-        color: "#E5E4E2",
-      },
-    ],
-    image: snack,
+    video: snackdashV,
     source_code_link: "https://github.com/vivekanand-vr/snackdash.git",
   },
 
   {
     name: "Customer Relationship Manager",
     description:
-      "This web application is built using Spring MVC and it efficiently manages customer details, empowering users to seamlessly add, update, or delete records.",
-    tags: [
-      {
-        name: "Spring Boot, Thymleaf, MySQL",
-        color: "#E5E4E2",
-      },
-    ],
-    image: crm,
+      "This web application that efficiently manages customer details, empowering users to seamlessly manage records.",
+    video: crmV,
     source_code_link: "https://github.com/vivekanand-vr/crmSystem-thymleaf.git",
   },
 
@@ -175,34 +164,10 @@ const projects = [
     name: "Student Management Portal",
     description:
       "A student management portal to facilitate CRUD operations on student records. Implemented MVC design pattern.",
-    tags: [
-      {
-        name: "Java, JEE, Hibernate, MySQL",
-        color: "#E5E4E2",
-      },
-    ],
-    image: mvc,
+    video: smpV,
     source_code_link: "https://github.com/vivekanand-vr/student_management_portal.git",
   },
  
 ];
 
 export { technologies, experiences, projects };
-
-/* Additional Projects
- {
-    name: "Weather Forecast Application",
-    description:
-      "An application to display weather details according to city. Integrated OpenWeather APIs for real-time weather data retrieval",
-    tags: [
-      {
-        name: "React JS, Tailwind CSS",
-        color: "#E5E4E2",
-      },
-    ],
-    image: wfa,
-    source_code_link: "https://github.com/vivekanand-vr/weather-forecast-app.git",
-  },
-  
-  
-  */
