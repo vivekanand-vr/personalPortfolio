@@ -21,9 +21,12 @@ const About = () => {
       <p className={`${styles.sectionSubText} mt-10`}>Coding Metrics</p>
       <h2 className="mb-10 mt-2 font-mukta font-extrabold text-white text-2xl md:text-5xl">Programming Stats</h2>
       
-      <div className="flex flex-wrap gap-5 rounded-md max-w-fit">
-        <img className="border border-gray-300 rounded-md overflow-hidden inline-block" src="https://leetcard.jacoblin.cool/vicky_007?theme=dark&font=Rubik&ext=contest" alt="leetcode profile"></img>
-        <img src="https://github-readme-stats.vercel.app/api?username=vivekanand-vr&theme=algolia&show_icons=true&hide_border=false&count_private=true" alt="github stats"></img>
+      <div className="flex flex-wrap gap-4 rounded-md max-w-fit">
+        <img className="border border-gray-300 rounded-md overflow-hidden inline-block" src="https://leetcard.jacoblin.cool/vicky_007?theme=dark&font=Nunito&ext=contest" alt="leetcode profile"></img>
+        <span className="space-y-4">
+          <img src="https://github-readme-stats.vercel.app/api?username=vivekanand-vr&theme=react&show_icons=true&hide_border=true&count_private=true" alt="github stats" />
+          <img src="https://github-readme-streak-stats.herokuapp.com/?user=vivekanand-vr&theme=react&hide_border=true" alt="github stats" />
+        </span>
       </div>
     </>
   );
