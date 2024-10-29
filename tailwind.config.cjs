@@ -5,7 +5,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        mukta: ['Mukta', 'sans-serif'],  // Add 'Mukta' font
+        dmsans: ['"DM Sans"', 'sans-serif'],
       },
       colors: {
         primary: "#03002e",
