@@ -76,10 +76,11 @@ const experiences = [
     iconBg: "#000000",
     date: "October 2024 - Present",
     points: [
-      "Developing custom applications within the Workday ecosystem using Workday App Builder, ensuring seamless integration with Workday processes.",
-      "Utilizing Graph API, SOAP, and REST APIs to connect and manage data across various systems, enabling efficient application functionality.",
-      "Working with Workday model objects and orchestrations to design scalable and optimized workflows that align with business requirements.",
-      "Collaborating with cross-functional teams to integrate and test applications, while adhering to Workday's best practices for security and performance.",
+      "Developing custom Workday applications using Workday Extend and App Builder to meet client-specific needs and enhance functionality.",
+      "Integrating and managing data across various systems through API integrations, enabling seamless data flow and efficient application performance.",
+      "Writing PMD scripts to implement application-specific functionalities, ensuring smooth operation and tailored solutions.",
+      "Working with Workday model components to create and customize business objects, business processes, and security domains, supporting complex business requirements.",
+      "Actively participating in other development processes, collaborating with team members, and adhering to best practices in development and deployment."
     ],
   }, 
   

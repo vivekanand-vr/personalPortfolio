@@ -65,7 +65,7 @@ const Hero = () => {
               animate={{ y: 0 }}
               transition={{ duration: 0.5, delay: 0.4 }}
             >
-              With 2+ years of experience, I craft engaging and responsive web applications that bring ideas to life. Let's build something amazing together!
+              I craft engaging and responsive web applications that bring ideas to life. Let's build something amazing together!
             </motion.p>
             <SocialHandles />
           </div>

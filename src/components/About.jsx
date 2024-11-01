@@ -11,11 +11,9 @@ const About = () => {
         <h2 className={styles.sectionHeadText}>Overview.</h2>
       </div>
 
-      <p className='mt-4 text-slate-200 text-sm md:text-lg max-w-5xl'>
-        My expertise lies in <span className="text-sky-300 font-semibold">React JS <FaReact className="inline-block -mt-1" /> </span> for building dynamic front-end interfaces and &nbsp;
-        <span className="text-green-400 font-semibold">Java <FaJava className="inline-flex -mt-1" /> </span>for robust back-end systems. 
-        I've had the opportunity to work on diverse projects that have sharpened my skills in development. <br />
-        I'm always eager to learn and apply new technologies to solve complex problems efficiently.
+      <p className='mt-4 text-slate-200 text-sm md:text-lg max-w-4xl'>
+        My expertise is in building dynamic, responsive interfaces with React JS and developing robust backend systems with Java. 
+        Working on diverse projects has deepened my skills across the full stack, with a primary focus on front-end engineering.
       </p>
 
       <p className={`${styles.sectionSubText} mt-10`}>Coding Metrics</p>
