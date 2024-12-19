@@ -1,5 +1,5 @@
 import { javascript, html, css, tailwind, git, springBoot, ineuron, amber, e1 } from "../assets";
-import { calendlyV, crmV, monopolyV, rentifyV, smpV, snackdashV, trackflowV } from "../assets";
+import { crmV, monopolyV, rentifyV, smpV, snackdashV, trackflowV } from "../assets";
 
 export const navLinks = [
   {
@@ -131,15 +131,6 @@ const projects = [
     ],
     video: trackflowV,
     source_code_link: "https://github.com/vivekanand-vr/trackFlow",
-  },
-  {
-    name: "Calendly",
-    points:[
-      "Enables efficient event scheduling with a dynamic calendar view, allowing users to easily manage and organize events.",
-      "Provides seamless drag-and-drop functionality for events, supported by secure authentication and robust data management.",
-    ],
-    video: calendlyV,
-    source_code_link: "https://github.com/vivekanand-vr/calendly",
   },
   {
     name: "Monopoly",
