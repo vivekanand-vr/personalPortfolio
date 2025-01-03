@@ -1,4 +1,4 @@
-import { javascript, html, css, tailwind, git, springBoot, ineuron, amber, e1 } from "../assets";
+import { javascript, ineuron, amber, e1 } from "../assets";
 import { crmV, monopolyV, rentifyV, smpV, snackdashV, trackflowV } from "../assets";
 
 export const navLinks = [
@@ -23,15 +23,15 @@ export const navLinks = [
 const technologies = [
   {
     name: "git",
-    icon:  git,
+    icon:  "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-plain-wordmark.svg",
   },
   {
     name: "HTML 5",
-    icon:  html, 
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg", 
   },
   {
     name: "CSS 3",
-    icon:  css,   
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg",   
   },
   {
     name: "JavaScript",
@@ -39,27 +39,35 @@ const technologies = [
   },
   {
     name: "React JS",
-    icon: "https://devicon-website.vercel.app/api/react/original.svg",
+    icon: "https://devicon-website.vercel.app/api/react/original-wordmark.svg",
   },
   {
     name: "Tailwind CSS",
-    icon: tailwind,
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+  },
+  {
+    name: "Firebase",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original-wordmark.svg",
   },
   {
     name: "Java",
-    icon: "https://devicon-website.vercel.app/api/java/original.svg",
+    icon: "https://devicon-website.vercel.app/api/java/original-wordmark.svg",
   },
   {
     name: "spring",
-    icon: springBoot,
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original-wordmark.svg",
   },
   {
     name: "Docker",
     icon: "https://devicon-website.vercel.app/api/docker/original-wordmark.svg",
   },
   {
+    name: "Redis",
+    icon: "https://devicon-website.vercel.app/api/redis/original-wordmark.svg"
+  },
+  {
     name: "MySQL",
-    icon: "https://devicon-website.vercel.app/api/mysql/original.svg",
+    icon: "https://devicon-website.vercel.app/api/mysql/original-wordmark.svg",
   },
   {
     name: "MongoDB",

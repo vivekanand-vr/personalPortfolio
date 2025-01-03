@@ -9,12 +9,7 @@ import ineuron from "./company_icons/ineuron.png";
 
 // Skills Icons
 import github from "./tech_icons/github.png";
-import css from "./tech_icons/css.png";
-import git from "./tech_icons/git.png";
-import html from "./tech_icons/html.png";
 import javascript from "./tech_icons/javascript.png";
-import tailwind from "./tech_icons/tailwind.png";
-import springBoot from "./tech_icons/springBoot.png";
 
 //Project Videos
 import crmV from './project_videos/CRM_Video.mp4';
@@ -26,5 +21,4 @@ import trackflowV from './project_videos/Trackflow_Video.mp4';
 
 export { crmV, monopolyV, rentifyV, smpV, snackdashV, trackflowV };
 
-export { menu, close, github, css, git, html, javascript, tailwind, springBoot,
-         e1, ineuron, amber };
+export { menu, close, github, javascript, e1, ineuron, amber };
