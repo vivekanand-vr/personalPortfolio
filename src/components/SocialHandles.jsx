@@ -50,7 +50,7 @@ function SocialHandles() {
         <a href="https://github.com/vivekanand-vr" target="_blank" className="text-xl md:text-3xl hover:text-sky-400 transition-colors"><FaGithub /></a>
         <a href="https://leetcode.com/vicky_007/" target="_blank" className="text-xl md:text-3xl hover:text-sky-400 transition-colors"><SiLeetcode/></a>
         <a href="https://www.linkedin.com/in/vivekanand-vernekar" target="_blank"  className="text-xl md:text-3xl hover:text-sky-400 transition-colors"><FaLinkedin /></a>
-        <a href='https://drive.google.com/file/d/1KSuy9NEqeqWDwOLaGCb3PJK84AQRRFUQ/view?usp=sharing' target="_blank" 
+        <a href='https://drive.google.com/file/d/1e7AKsfWZ8t1ledklyEZtp8OsQnWT7d1I/view?usp=sharing' target="_blank" 
            className='text-sm md:text-xl border border-white p-1.5 md:p-2 -mt-2 hover:bg-white hover:text-black transition duration-250 ease-in'>Resume</a>
         </motion.div>
   );

@@ -2,11 +2,6 @@
 import menu from "./svgs/menu.svg";
 import close from "./svgs/close.svg";
 
-// Company Icons
-import e1 from './company_icons/e1.jpg'
-import amber from "./company_icons/amber.jpg";
-import ineuron from "./company_icons/ineuron.png";
-
 // Skills Icons
 import github from "./tech_icons/github.png";
 import javascript from "./tech_icons/javascript.png";
@@ -21,4 +16,4 @@ import trackflowV from './project_videos/Trackflow_Video.mp4';
 
 export { crmV, monopolyV, rentifyV, smpV, snackdashV, trackflowV };
 
-export { menu, close, github, javascript, e1, ineuron, amber };
+export { menu, close, github, javascript };

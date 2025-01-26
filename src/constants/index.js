@@ -1,4 +1,4 @@
-import { javascript, ineuron, amber, e1 } from "../assets";
+import { javascript } from "../assets";
 import { crmV, monopolyV, rentifyV, smpV, snackdashV, trackflowV } from "../assets";
 
 export const navLinks = [
@@ -46,8 +46,12 @@ const technologies = [
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
   },
   {
-    name: "Firebase",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original-wordmark.svg",
+    name: "Node JS",
+    icon: "https://devicon-website.vercel.app/api/nodejs/original.svg"
+  },
+  {
+    name: "Express JS",
+    icon: "https://devicon-website.vercel.app/api/express/original-wordmark.svg?color=%23FFFFFF"
   },
   {
     name: "Java",
@@ -58,6 +62,10 @@ const technologies = [
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original-wordmark.svg",
   },
   {
+    name: "junit5",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/junit/junit-original-wordmark.svg",
+  },
+  {
     name: "Docker",
     icon: "https://devicon-website.vercel.app/api/docker/original-wordmark.svg",
   },
@@ -66,13 +74,21 @@ const technologies = [
     icon: "https://devicon-website.vercel.app/api/redis/original-wordmark.svg"
   },
   {
+    name: "Apache Kafka",
+    icon: "https://devicon-website.vercel.app/api/apachekafka/original-wordmark.svg?color=%23FFFCFD"
+  },
+  {
     name: "MySQL",
     icon: "https://devicon-website.vercel.app/api/mysql/original-wordmark.svg",
   },
   {
     name: "MongoDB",
     icon: "https://devicon-website.vercel.app/api/mongodb/original-wordmark.svg",
-  }, 
+  },
+  {
+    name: "GraphQL",
+    icon: "https://devicon-website.vercel.app/api/graphql/plain-wordmark.svg"
+  } 
 ];
 
 const experiences = [
@@ -80,22 +96,21 @@ const experiences = [
   {
     title: "Software Developer",
     company_name: "E1 Consulting",
-    icon: e1,
+    icon: "https://media.licdn.com/dms/image/v2/D560BAQEFX9q77L0pkg/company-logo_200_200/company-logo_200_200/0/1718343735792/e1_consulting_logo?e=2147483647&v=beta&t=eUSuuuTH44a-qCGCxOTkRK-0rx_Kd5WLfyBYqAPu2f8",
     iconBg: "#000000",
     date: "October 2024 - Present",
     points: [
-      "Developing custom Workday applications using Workday Extend and App Builder to meet client-specific needs and enhance functionality.",
-      "Integrating and managing data across various systems through API integrations, enabling seamless data flow and efficient application performance.",
-      "Writing PMD scripts to implement application-specific functionalities, ensuring smooth operation and tailored solutions.",
-      "Working with Workday model components to create and customize business objects, business processes, and security domains, supporting complex business requirements.",
-      "Actively participating in other development processes, collaborating with team members, and adhering to best practices in development and deployment."
+      "Developed and maintained the Recognition Admin Application using React.js and Tailwind CSS, creating reusable components and implementing secure routing with restricted access, resulting in a 20% improvement in user efficiency.",
+      "Built a scalable backend using Node.js and Express.js, integrating MySQL with Sequelize ORM for efficient database transactions, implementing JWT-based authentication and authorization, following MVC architecture.",
+      "Ensured robust error handling and scalability by designing custom exceptions, optimizing backend queries, and implementing a modular code structure.",
+      "Built and deployed 6+ Workday Extend applications from app catalog, using the App Builder to create PMD pages and workflows.",
     ],
   }, 
   
   {
     title: "SDE Intern - Frontend",
     company_name: "Amber",
-    icon: amber,
+    icon: "https://s3-eu-west-1.amazonaws.com/tpd/logos/579c87e70000ff000592e82f/0x0.png",
     iconBg: "#FF0000",
     date: "February 2024 - July 2024",
     points: [
@@ -107,15 +122,16 @@ const experiences = [
     ],
   }, 
   {
-    title: "Full Stack Developer Intern",
-    company_name: "iNeuron.ai",
-    icon: ineuron,
+    title: "Full Stack Developer",
+    company_name: "Freelance",
+    icon: "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/upwork-icon.png",
     iconBg: "#1434A4",
     date: "January 2023 - January 2024",
     points: [
-      "Led the back-end development of web applications using Spring Framework, JDBC, and Servlets, enhancing data processing efficiency by 30% through optimized integration with MySQL database.",
-      "Developed dynamic and interactive user interfaces using React JS, boosting user engagement by 20 and reducing page load time by 15% for single-page applications.",
-      "Collaborated with a team of 5 developers utilizing Git and GitHub for version control, improving code deployment speed by 25% and ensuring 100% successful feature rollouts.",
+      "Designed and developed responsive landing pages using React.js and Bootstrap for a small-scale startup, improving client engagement",
+      "Worked on Maven multi-module project, creating modules and packaging them into a single WAR file for deployment.",
+      "Migrated two landing pages from HTML, CSS, and JavaScript to React.js, improving performance and maintainability.",
+      "Assisted in maintaining and troubleshooting the application under the guidance of a mentor, ensuring smooth operations and deployment."
     ],
   },
 ];

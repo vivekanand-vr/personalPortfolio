@@ -26,7 +26,7 @@ const Hero = () => {
         <div className="flex flex-col md:flex-row items-center justify-center mb-6 md:mb-12">
           <div className="w-40 h-48 md:w-56 md:h-72 mb-3 md:mb-0 md:mr-8">
             <motion.img 
-              src="V.jpg" 
+              src="V_Image.jpg" 
               alt="Vivekanand" 
               className="border-4 border-white rounded-xl shadow-lg object-cover w-40 h-48 md:w-56 md:h-72"
               initial={{ scale: 0.8 }}
