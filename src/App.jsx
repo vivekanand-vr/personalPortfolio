@@ -5,10 +5,6 @@ const App = () => {
   return (
     <BrowserRouter>
       <div className='relative z-0 bg-gradient'>
-        <div>
-        <div id='stars'></div>
-        <div id='stars2'></div>
-        <div id='stars3'></div>
           <Navbar />
           <Hero />
           <About />
@@ -19,7 +15,6 @@ const App = () => {
               <Contact />
               <StarsCanvas />
           </div>
-        </div> 
       </div>
     </BrowserRouter>
   );

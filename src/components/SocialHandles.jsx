@@ -31,7 +31,10 @@ function Metrics(){
           transition={{ duration: 0.5, delay: 0.7 }}>
       {metrics.map((metric, index) => (
           <div key={index}>
-            <h3 className="text-xl md:text-3xl font-semibold text-sky-400">{metric.title}</h3>
+          <h3 className="text-2xl md:text-4xl font-bold bg-gradient-to-t from-purple-400 to-cyan-300 bg-clip-text text-transparent">
+  {metric.title}
+</h3>
+
             <p className="text-xs md:text-sm text-neutral-400">{metric.text}</p>
           </div>
       ))}

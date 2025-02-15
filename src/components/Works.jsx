@@ -1,14 +1,16 @@
 import React, { useState, useRef, useEffect } from "react";
+import SectionWrapper from '../hoc/SectionWrapper'
 import { FaGithub } from 'react-icons/fa';
+import { motion } from 'framer-motion';
 import { styles } from "../styles";
-import { SectionWrapper } from "../hoc";
-import { projects } from "../constants";
+import { projects } from '../constants/index';
 
 const ProjectCard = ({
   name,
-  points,
+  description,
   video,
   source_code_link,
+  tags = [],
 }) => {
   const [isHovered, setIsHovered] = useState(false);
   const videoRef = useRef(null);
@@ -24,16 +26,18 @@ const ProjectCard = ({
 
   return (
     <div 
-      className='bg-[#11284b] p-3 md:p-4 rounded-lg sm:w-[350px] cursor-pointer md:hover:scale-110 duration-300 hover:bg-gray-800'
+      className="bg-white p-4 rounded-md sm:w-[380px] 
+                 transform transition-all duration-300 hover:-translate-y-2 hover:shadow-lg 
+                 hover:shadow-blue-500/20"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <div className='relative h-52'>
-        {/* Video will pause on hover end and reset */}
+      <div className="relative h-56 overflow-hidden rounded-md">
+        <div className="absolute inset-0 bg-black/20 z-10" /> {/* Overlay for better contrast */}
         <video
           ref={videoRef}
           src={video}
-          className='w-full h-full object-cover rounded'
+          className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-105"
           muted
           playsInline
           loop
@@ -44,51 +48,70 @@ const ProjectCard = ({
             }
           }}
         />
-        <div className='absolute inset-0 flex justify-end m-2'>
-          <div onClick={() => window.open(source_code_link, "_blank")}
-               className='black-gradient w-8 h-8 rounded-full flex justify-center items-center cursor-pointer hover:text-green-400'>
-              <FaGithub size={20} /> 
-            </div>
-          </div>
+        <div className="absolute top-3 right-3 z-20 flex gap-3">
+          {source_code_link && (
+            <motion.div
+              whileHover={{ scale: 1.1 }}
+              className="bg-black backdrop-blur-md p-2 rounded-full hover:bg-white/20 transition-colors"
+            >
+              <a href={source_code_link} target="_blank" rel="noopener noreferrer" 
+                 className="text-white hover:text-sky-400 transition-colors">
+                <FaGithub size={20} />
+              </a>
+            </motion.div>
+          )}
+        </div>
       </div>
 
-      <div className='mt-5 mb-4'>
-        <h3 className='ml-2 text-white font-bold text-lg md:text-xl'>{name}</h3>
-        <ul className="list-disc ml-6 mt-2 space-y-2">
-          {points.map((point, index) =>(
-              <li key={index} className="text-gray-200 text-sm leading-5">
-                 {point}
-              </li>
+      <div className="mt-6 ml-2">
+        <h3 className="text-2xl font-bold text-black">
+          {name}
+        </h3>
+        
+        <p className="mt-3 text-gray-800 text-sm leading-relaxed">
+          {description}
+        </p>
+
+        <div className="mt-4 mb-2 flex flex-wrap gap-2">
+          {tags.map((tag, index) => (
+            <span
+              key={index}
+              className="px-3 py-1 text-xs rounded-full bg-sky-900/60 text-white 
+                         border border-slate-300"
+            >
+              {tag}
+            </span>
           ))}
-        </ul>   
+        </div>
       </div>
     </div>
   );
 };
 
-
 const Works = () => {
   return (
-    <>
-      <div>
-        <p className={`${styles.sectionSubText} `}>My work</p>
-        <h2 className={`${styles.sectionHeadText}`}>Projects.</h2>
-      </div>
+    <div className="relative z-0 min-h-screen">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="pt-16 pb-8">
+          <p className={styles.sectionSubText}>MY WORK</p>
+          <h2 className={styles.sectionHeadText}>
+            Projects.
+          </h2>
+          
+          <p className="text-gray-300 text-lg max-w-3xl leading-relaxed">
+            Following projects showcase my skills and experience through
+            real-world examples of my work. Each project is briefly described with
+            links to code repositories and live demos.
+          </p>
+        </div>
 
-      <div className='w-full flex'>
-        <p className='mt-3 text-slate-200 text-[17px] max-w-3xl leading-[30px]'>
-          Following projects showcase my skills and experience through
-          real-world examples of my work. Each project is briefly described with
-          links to code repositories and live demos.
-        </p>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 md:gap-32 pb-16">
+          {projects.map((project, index) => (
+            <ProjectCard key={`project-${index}`} {...project} />
+          ))}
+        </div>
       </div>
-
-      <div className='mt-10 flex flex-wrap gap-7'>
-        {projects.map((project, index) => (
-          <ProjectCard key={`project-${index}`} index={index} {...project} />
-        ))}
-      </div>
-    </>
+    </div>
   );
 };
 

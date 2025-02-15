@@ -1,5 +1,5 @@
 import { javascript } from "../assets";
-import { crmV, monopolyV, rentifyV, smpV, snackdashV, trackflowV } from "../assets";
+import { rentifyV, snackdashV, trackflowV, sigmanextV, codeblocksV, fitjourneyV } from "../assets";
 
 export const navLinks = [
   {
@@ -139,62 +139,46 @@ const experiences = [
 
 const projects = [ 
   {
+    name: "Sigma Next",
+    description: "Sigma Next is an e-learning platform that helps students improve their skills in DSA, competitive programming, quizzes, and code snippets. It features progress tracking, categorized challenges, and a scalable microservices architecture for seamless learning",
+    video: sigmanextV,
+    tags: ["Java", "React JS", "Spring Boot"],
+    source_code_link: "https://sigmanext.netlify.app/"
+  },
+  {
+    name: "Code Blocks",
+    description: "A customizable React UI library offering reusable components categorized for easy access. Integrate directly into projects to streamline development and focus on business logic.",
+    video: codeblocksV,
+    tags: ["JavaScript", "React JS", "Tailwind CSS"],
+    source_code_link: "https://github.com/vivekanand-vr/code_blocks",
+  },
+  {
+    name: "Fit Journey",
+    description: "Fit Journey is a fitness tracking app that records workouts, displays progress graphs, and manages exercise stats. It features a personalized dashboard with user insights and top workout records.",
+    video: fitjourneyV,
+    tags: ["Java", "React JS", "Spring Boot", "MySQL"],
+    source_code_link: "https://github.com/vivekanand-vr/fit_journey",
+  },
+  {
     name: "Rentify",
-    points:[
-      "Simplifies the rental process by seamlessly connecting property owners with tenants based on their needs.",
-      "Addresses the growing demand for real estate in high-population cities, making renting more efficient post-pandemic."
-    ],
+    description: "A platform that streamlines the rental process by connecting property owners with tenants based on their needs. Designed to enhance efficiency in high-demand urban real estate markets, especially in the post-pandemic era.",
     video: rentifyV,
+    tags: ["Java", "React JS", "Spring Boot"],
     source_code_link: "https://github.com/vivekanand-vr/Rentify",
   },
   {
     name: "TrackFlow",
-    points:[
-      "Streamlines job application management with a clean interface, making it easy to track and organize applications.",
-      "Offers personalized dashboards and secure user authentication for a customized experience."
-    ],
+    description: "A job application management platform with a clean interface for tracking and organizing applications. Features personalized dashboards and secure authentication for a tailored user experience.",
     video: trackflowV,
+    tags: ["JavaScript", "React JS", "Tailwind CSS"],
     source_code_link: "https://github.com/vivekanand-vr/trackFlow",
   },
   {
-    name: "Monopoly",
-    points:[
-      "A two-player API based Monopoly game that can be played by sending API requests and transaction status will be recieved as response",
-      "Includes a UI for playing ensuring an authentic game experience with interactive transaction messages",
-    ],
-    video: monopolyV,
-    source_code_link: "https://github.com/vivekanand-vr/monopoly-2player",
-
-  },
-
-  {
     name: "Snack Dash",
-    points:[
-      "Delivers a seamless user experience with restaurant browsing, login, and cart functionality, inspired by Swiggy's popular interface.",
-      "Efficiently manages restaurant data and user interactions, with more features in development to enhance convenience and variety.",
-    ],
+    description: "A restaurant browsing platform with login, cart functionality, and efficient data management. Inspired by Swiggy, it enhances user interactions and continues to evolve with new features for added convenience and variety.",
     video: snackdashV,
+    tags: ["JavaScript", "React JS", "Tailwind CSS"],
     source_code_link: "https://github.com/vivekanand-vr/snackdash.git",
-  },
-
-  {
-    name: "Customer Relationship Manager",
-    points:[
-      "Facilitates smooth customer data management with seamless CRUD operations, enhancing operational efficiency.",
-      "Combines dynamic web rendering with a modern, responsive interface for an intuitive and engaging user experience.",
-    ],
-    video: crmV,
-    source_code_link: "https://github.com/vivekanand-vr/crmSystem-thymleaf.git",
-  },
-
-  {
-    name: "Student Management Portal",
-    points:[
-      "Simplifies student record management with efficient CRUD operations, ensuring streamlined data handling and retrieval.",
-      "Leverages the MVC architecture for clear separation of concerns and Hibernate for smooth database interaction.",
-    ],
-    video: smpV,
-    source_code_link: "https://github.com/vivekanand-vr/student_management_portal.git",
   },
  
 ];

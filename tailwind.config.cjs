@@ -22,7 +22,10 @@ module.exports = {
         xs: "450px",
       },
       backgroundImage: {
-        'gradient': "radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%)",
+        'gradient': `
+          radial-gradient(circle at center, #1e40af 0%, transparent 70%),
+          linear-gradient(to bottom right, #0f172a 0%, #020617 100%)
+        `,
       },
     },
   },

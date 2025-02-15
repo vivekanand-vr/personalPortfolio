@@ -1,7 +1,6 @@
 import React from "react";
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
-import { FaReact, FaJava } from "react-icons/fa";
 
 const About = () => {
   return (
@@ -20,10 +19,10 @@ const About = () => {
       <h2 className="mb-12 mt-2 font-dmsans font-extrabold tracking-wide text-white text-2xl md:text-7xl">Programming Stats</h2>
       
       <div className="flex flex-wrap gap-4 rounded-md max-w-fit">
-        <img className="border border-gray-300 rounded-md overflow-hidden inline-block" src="https://leetcard.jacoblin.cool/vicky_007?theme=dark&font=Nunito&ext=contest" alt="leetcode profile"></img>
+        <img className="bg-white rounded-md overflow-hidden inline-block" src="https://leetcard.jacoblin.cool/vicky_007?theme=light&font=IBM%20Plex%20Mono&ext=contest" alt="leetcode profile"></img>
         <span className="space-y-4">
-          <img src="https://github-readme-stats.vercel.app/api?username=vivekanand-vr&theme=react&show_icons=true&hide_border=true&count_private=true" alt="github stats" />
-          <img src="https://github-readme-streak-stats.herokuapp.com/?user=vivekanand-vr&theme=react&hide_border=true" alt="github stats" />
+          <img src="https://github-readme-stats.vercel.app/api?username=vivekanand-vr&theme=graywhite&show_icons=true&hide_border=true&count_private=true" alt="github stats" />
+          <img src="https://github-readme-streak-stats.herokuapp.com/?user=vivekanand-vr&theme=graywhite&hide_border=true" alt="github stats" />
         </span>
       </div>
     </>
