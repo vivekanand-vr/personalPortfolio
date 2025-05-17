@@ -84,11 +84,7 @@ const technologies = [
   {
     name: "MongoDB",
     icon: "https://devicon-website.vercel.app/api/mongodb/original-wordmark.svg",
-  },
-  {
-    name: "GraphQL",
-    icon: "https://devicon-website.vercel.app/api/graphql/plain-wordmark.svg"
-  } 
+  }
 ];
 
 const experiences = [
@@ -100,10 +96,10 @@ const experiences = [
     iconBg: "#000000",
     date: "October 2024 - Present",
     points: [
-      "Developed and maintained the Recognition Admin Application using React.js and Tailwind CSS, creating reusable components and implementing secure routing with restricted access, resulting in a 20% improvement in user efficiency.",
-      "Built a scalable backend using Node.js and Express.js, integrating MySQL with Sequelize ORM for efficient database transactions, implementing JWT-based authentication and authorization, following MVC architecture.",
-      "Ensured robust error handling and scalability by designing custom exceptions, optimizing backend queries, and implementing a modular code structure.",
-      "Built and deployed 6+ Workday Extend applications from app catalog, using the App Builder to create PMD pages and workflows.",
+      "Built Edge, an internal administration dashboard built with React.js, Express.js, MySQL, and Sequelize. The platform is used to manage surveys, forms, and questionnaires, track employee exit interactions, monitor event data, and handle email notifications.",
+      "Led the entire development lifecycle, including feature implementation, bug fixes, performance tuning, and deployment to AWS App Runner. Also created comprehensive technical & API documentation.",
+      "Integrated Workday APIs with full-stack applications to sync employee data, automate event-driven workflows, and enable secure real-time interactions with enterprise systems.",
+      "Led the development and maintenance of the Recognition Admin Application using React.js and Tailwind UI, building a dynamic UI with modular reusable components. Integrated role-based secure routing",
     ],
   }, 
   
@@ -124,8 +120,8 @@ const experiences = [
   {
     title: "Full Stack Developer",
     company_name: "Freelance",
-    icon: "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/upwork-icon.png",
-    iconBg: "#1434A4",
+    icon: "https://www.citypng.com/public/uploads/preview/upwork-round-logo-icon-png-7017516949686332n4bo69bd8.png",
+    iconBg: "#00A36C",
     date: "January 2023 - January 2024",
     points: [
       "Designed and developed responsive landing pages using React.js and Bootstrap for a small-scale startup, improving client engagement",
